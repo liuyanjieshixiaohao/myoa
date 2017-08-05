@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>刘炎杰的oa</title>
+    <link rel="stylesheet" type="text/css" href="hby.css">
+    <link rel="stylesheet" type="text/css" href="initialize.css">
+    <script type="text/javascript" src="demo2.js"></script>
+    <script type="text/javascript" src="base.js"></script>
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <img src="logo.jpg" alt="移动" title="中国移动集团" align="left">
+            <ul id="nav">
+                <li><a href="http://www.baidu.com" title="按您的需求个性化定制">我的公司</a></li>
+                <li><a href="http://www.baidu.com" title="按您的需求个性化定制">联系方式</a></li>
+                <li><a href="http://www.baidu.com" title="按您的需求个性化定制">我的集团</a></li>
+                <li><a href="http://www.baidu.com" title="按您的需求个性化定制">我的公会</a></li>
+            </ul>
+            <div id="member">个性定制</div>
+            <ul id="box">
+                <li><a href="#">换肤</a></li>
+                <li><a href="#">设置</a></li>
+                <li><a href="#">信息</a></li>
+                <li><a href="#">退出</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <div id="lside">
+                <div class="subtitle">用户登陆</div>
+                <div id="upside">
+                    <form action="http://www.baidu.com"></form>
+                    <br /><span style="font-size: 12px">用户名：</span>
+                    <input type="text" size="15" maxlength="20" />
+                    <br /><span style="font-size: 12px"> 密&nbsp;&nbsp;&nbsp;&nbsp;码：</span>
+                    <input type="password" size="15" maxlength="20" />
+                    <br />
+                    <div id="two">
+                        <input type="submit" title="登陆" value="登陆" />
+                        <input type="submit" title="忘记密码" value="忘记密码" />
+                    </div>
+                </div>
+                <div id="midside">
+                    <div class="subtitle">天气预报</div>
+                    <script>
+                    function a(){
+                        var date=new Date();
+                        alert(date);
+                        alert("想看天气点我");
+                        var pattern=/^(?:.+)\@(?:.+)\.(?:.{2,4})$/;
+                        var str="wageshishabi@163.com";
+                        var bcd=pattern.exec(str);
+                        document.write(bcd[0]);
+                    }
+                    </script>
+                    <div id="fifth">
+                        <input id="test_input" type="submit" title="天气" value="点我看天气和当前时间" style="width: 200px;height: 30px;font-size: 15px; background-color: white;" onclick="a()"; />
+                        晴天 39-40度</div>
+                </div>
+                <div id="downside">
+                    <div class="subtitle">系统链接</div>
+                    <ul id="styleside">
+                        <li><a href="http://www.baidu.com">战略预警决策</a></li>
+                        <li><a href="http://www.baidu.com">移动青年</a></li>
+                        <li><a href="http://www.baidu.com">上海移动门户网站</a></li>
+                        <li><a href="http://www.baidu.com">网管门户系统</a></li>
+                        <li><a href="http://www.baidu.com">网络优化中心共享平台</a></li>
+                        <li><a href="http://www.baidu.com">集团客户部文件共享</a></li>
+                        <li><a href="http://www.baidu.com">内退管理</a></li>
+                        <li><a href="http://www.baidu.com">属地人力资源</a></li>
+                        <li><a href="http://www.baidu.com">集团公司OA</a></li>
+                        <li><a href="http://www.baidu.com">会议接待系统</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="rside">
+                <div class="subtitle">滚动新闻
+                    <div id="first">这是滚动新闻</div>
+                </div>
+                <div class="subtitle">重要公告</div>
+                <div id="second">
+                    <ul>
+                        <li><a href="http://www.baidu.com">关于转发《关于终端公司面向集团公司的招聘信息············2017-07-14</a></li>
+                        <li><a href="http://www.baidu.com">关于网络优化中心办公地址搬迁的通知································2017-07-14</a></li>
+                        <li><a href="http://www.baidu.com">便民物业维修服务（试运行）················································2017-07-14</a></li>
+                    </ul>
+                </div>
+                <div class="subtitle">每日情况</div>
+                <div id="third">
+                    <ul>
+                        <li><a href="http://www.baidu.com">巴萨签下刘炎杰</a></li>
+                        <li><a href="http://www.baidu.com">利物浦签下老蒋</a></li>
+                        <li><a href="http://www.baidu.com">曼联签下贾正皓</a></li>
+                        <li><a href="http://www.baidu.com">国安签下臧逸飞</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="last">
+                <div class="subtitle">上海移动报</div>
+                <div id="fourth">
+                    <ul>
+                        <li>报纸1</li>
+                        <li>报纸2</li>
+                        <li>报纸3</li>
+                        <li>报纸4</li>
+                        <li>报纸5</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+       $("#member").mouseover(function(){
+        $("ul#box li").hide()
+       });
+       $("#member").mouseleave(function(){
+        $("ul#box li").show()
+       });
+    </script>
+</body>
+
+</html>
