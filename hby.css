@@ -1,6 +1,6 @@
 #container {
     height: 1000px;
-    width: 1080px;
+    width: 1380px;
     margin: 30px 30px;
 }
 
@@ -11,7 +11,7 @@
 #box li{
     font-size: 20px;
     width: 100px;
-    margin-left: 1000px;
+    margin-left: 1300px;
     text-align: bottom;
     text-indent: 20px;
 }
@@ -42,7 +42,7 @@
 }
 
 #nav li {
-    width: 150px;
+    width: 250px;
     color: white;
     background-image: url(nav.jpg);
     background-image: url(jiantou.png) no-repeat right center;
@@ -62,7 +62,7 @@
 }
 
 #main {
-    width: 1080px;
+    width: 1380px;
     height: 800px;
     background-color: white;
     float: left;
@@ -120,7 +120,7 @@
 
 #rside {
     height: 800px;
-    width: 600px;
+    width: 800px;
     margin-left: 30px;
     float: left;
 }
@@ -133,7 +133,7 @@
 }
 #second {
     height: 110px;
-    width: 600px;
+    width: 800px;
     background-color: red;
     float: left;
 }
@@ -155,7 +155,7 @@
  {
     height: 555px;
     background-color: lightblue;
-    width: 600px;
+    width: 800px;
     float: left;
 }
 
@@ -172,7 +172,7 @@
 }
 #last
 {
-	width: 234px;
+	width: 274px;
 	height: 827px;
 	background-color: yellow;
 	float: left;
