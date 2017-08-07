@@ -8,27 +8,33 @@
     height: 90px;
     background-image: url(lao.png);
 }
-#box li{
+
+#box li {
     font-size: 20px;
     width: 100px;
     margin-left: 1300px;
     text-align: bottom;
     text-indent: 20px;
+    margin-top: 5px;
 }
-#box li a{
+
+#box li a {
     color: red;
     width: 100px;
     display: block;
 }
-#box a:hover{
+
+#box a:hover {
     color: #333;
 }
-#member{
-    font-size:20px;
+
+#member {
+    font-size: 20px;
     float: right;
     color: red;
     cursor: pointer;
 }
+
 #nav a {
     color: white;
     font-size: 20px;
@@ -76,12 +82,11 @@
 
 #two {
     margin-left: 40px;
-    margin-top: 8px;
 }
 
 #upside {
     width: 216px;
-    height: 84px;
+    height: 104px;
     float: left;
     background-image: url(bg.gif);
 }
@@ -126,11 +131,12 @@
 }
 
 #first {
-    height: 84px;
+    height: 104px;
     color: red;
     background-image: url(se.jpg);
     text-align: left;
 }
+
 #second {
     height: 110px;
     width: 800px;
@@ -147,12 +153,12 @@
     color: magenta;
     background-color: gray;
 }
-#second li{
-	font-size: 15px;
+
+#second li {
+    font-size: 15px;
 }
 
-#third
- {
+#third {
     height: 555px;
     background-color: lightblue;
     width: 800px;
@@ -170,23 +176,25 @@
     color: orange;
     background-color: silver;
 }
-#last
-{
-	width: 274px;
-	height: 827px;
-	background-color: yellow;
-	float: left;
+
+#last {
+    width: 274px;
+    height: 827px;
+    background-color: yellow;
+    float: left;
 }
-#fourth
-{
-	margin-left: 34px;
+
+#fourth {
+    margin-left: 34px;
 }
-#fourth li{
-	color: purple;
-	list-style-type: hiragana-iroha;
-	font-style: italic;
-	font-size: 20px;
+
+#fourth li {
+    color: purple;
+    list-style-type: hiragana-iroha;
+    font-style: italic;
+    font-size: 20px;
 }
-#fifth{
-	font-size: 20px;
+
+#fifth {
+    font-size: 20px;
 }

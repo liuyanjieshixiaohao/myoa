@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>刘炎杰的oa</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <link rel="stylesheet" type="text/css" href="initialize.css">
     <script type="text/javascript" src="jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="hby.css">
     <script type="text/javascript" src="demo2.js"></script>
     <script type="text/javascript" src="base.js"></script>
@@ -22,23 +24,24 @@
                 <li><a href="http://www.baidu.com" title="按您的需求个性化定制">我的公会</a></li>
             </ul>
             <div id="member">个性定制</div>
-            <ul id="box">
-                <li><a href="#">换肤</a></li>
-                <li><a href="#">设置</a></li>
-                <li><a href="#">信息</a></li>
-                <li><a href="#">退出</a></li>
-            </ul>
+            <div id="str">
+                <ul id="box">
+                    <li><a href="#">换肤</a></li>
+                    <li><a href="#">设置</a></li>
+                    <li><a href="#">信息</a></li>
+                    <li><a href="#">退出</a></li>
+                </ul>
+            </div>
         </div>
         <div id="main">
             <div id="lside">
                 <div class="subtitle">用户登陆</div>
                 <div id="upside">
-                    <form action="http://www.baidu.com"></form>
-                    <br /><span style="font-size: 12px">用户名：</span>
-                    <input type="text" size="15" maxlength="20" />
-                    <br /><span style="font-size: 12px"> 密&nbsp;&nbsp;&nbsp;&nbsp;码：</span>
-                    <input type="password" size="15" maxlength="20" />
+                    <span style="font-size: 15px">用户名：</span>
+                    <input type="text" maxlength="10" style="width: 100px;height: 15px"/>
                     <br />
+                    <span style="font-size: 15px"> 密&nbsp;&nbsp;&nbsp;&nbsp;码：</span>
+                    <input type="password"  maxlength="10" style="width: 100px;height:15px" />
                     <div id="two">
                         <input type="submit" title="登陆" value="登陆" />
                         <input type="submit" title="忘记密码" value="忘记密码" />
@@ -47,19 +50,18 @@
                 <div id="midside">
                     <div class="subtitle">天气预报</div>
                     <script>
-                    function a(){
-                        var date=new Date();
+                    function a() {
+                        var date = new Date();
                         alert(date);
                         alert("想看天气点我");
-                        var pattern=/^(?:.+)\@(?:.+)\.(?:.{2,4})$/;
-                        var str="wageshishabi@163.com";
-                        var bcd=pattern.exec(str);
-                        document.write(bcd[0]);
+                        var pattern = /^(?:.+)\@(?:.+)\.(?:.{2,4})$/;
+                        var str = "wageshishabi@163.com";
+                        var bcd = pattern.exec(str);
+                        alert(bcd[0]);
                     }
                     </script>
                     <div id="fifth">
-                        <input id="test_input" type="submit" title="天气" value="点我看天气和当前时间" style="width: 200px;height: 30px;font-size: 15px; background-color: white;" onclick="a()"; />
-                        晴天 39-40度</div>
+                        <input id="test_input" type="submit" title="天气" value="点我看天气和当前时间" style="width: 200px;height: 30px;font-size: 15px; background-color: white;" onclick="a()" ; /> 晴天 39-40度</div>
                 </div>
                 <div id="downside">
                     <div class="subtitle">系统链接</div>
@@ -84,7 +86,7 @@
                 <div class="subtitle">重要公告</div>
                 <div id="second">
                     <ul>
-                        <li><a href="http://www.baidu.com">关于转发《关于终端公司面向集团公司的招聘信息············2017-07-14</a></li>
+                        <li><a href="http://www.baidu.com">关于转发《关于终端公司面向集团公司的招聘信息》············2017-07-14</a></li>
                         <li><a href="http://www.baidu.com">关于网络优化中心办公地址搬迁的通知································2017-07-14</a></li>
                         <li><a href="http://www.baidu.com">便民物业维修服务（试运行）················································2017-07-14</a></li>
                     </ul>
@@ -115,12 +117,12 @@
     </div>
     </div>
     <script type="text/javascript">
-       $("#member").mouseover(function(){
+    $("#member").mouseover(function() {
         $("ul#box li").hide()
-       });
-       $("#member").mouseleave(function(){
+    });
+    $("#member").mouseleave(function() {
         $("ul#box li").show()
-       });
+    });
     </script>
 </body>
 
